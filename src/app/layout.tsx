@@ -59,7 +59,7 @@ export const metadata: Metadata = {
       "Pimple, meet your Mighty Patch®. Visibly absorbs pimple gunk overnight. Gentle, drug-free, and suitable for all skin types.",
     images: [
       {
-        url: "/images/productimagelogos.svg",
+        url: "/images/productimagelogos.png",
         width: 1200,
         height: 630,
         alt: "Mighty Patch by Hero Cosmetics",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: "Mighty Patch | Hero Cosmetics - The #1 Best-Selling Acne Patch",
     description:
       "Pimple, meet your Mighty Patch®. Visibly absorbs pimple gunk overnight. Gentle and suitable for sensitive skin.",
-    images: ["/images/productimagelogos.svg"],
+    images: ["/images/productimagelogos.png"],
     creator: "@herocosmetics",
   },
   robots: {
