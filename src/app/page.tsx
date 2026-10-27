@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { HeroSection } from "@/component/landing/hero-section";
 import { RoutineSection } from "@/component/landing/routine-section";
 import { HowItWorks } from "@/component/landing/how-it-works";
@@ -26,7 +27,9 @@ export default function HomePage() {
         <EditorialSection />
       </div>
 
-      <SiteFooter />
+      <Suspense fallback={<footer className="bg-[#191919] px-5 py-10 text-white sm:py-16" />}>
+        <SiteFooter />
+      </Suspense>
     </main>
   );
 }
