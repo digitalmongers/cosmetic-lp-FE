@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-sans" });
 
+const siteUrl = "https://cosmetic-lp-fe.vercel.app";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,9 +24,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://cosmetic-lp-fe.vercel.app"
-  ),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Mighty Patch | Hero Cosmetics - The #1 Best-Selling Acne Patch",
     template: "%s | Hero Cosmetics",
