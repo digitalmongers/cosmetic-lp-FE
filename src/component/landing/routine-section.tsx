@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 const benefits = [
@@ -19,11 +18,11 @@ export function RoutineSection() {
             your routine
           </h2>
 
-          <ul className="mt-10 space-y-5">
+          <ul className="mt-6 sm:mt-10 space-y-4 sm:space-y-5">
             {benefits.map((benefit) => (
               <li
                 key={benefit}
-                className="flex items-center gap-5 border-b border-black/10 pb-2.5 text-sm sm:text-lg font-medium text-neutral-800"
+                className="flex items-center gap-4 sm:gap-5 border-b border-black/10 pb-2.5 text-sm sm:text-lg font-medium text-neutral-800"
               >
                 <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#C93837]" />
                 {benefit}
@@ -33,20 +32,26 @@ export function RoutineSection() {
 
           <Button
             variant="default"
-            className="mt-6 w-full md:text-lg sm:text-sm py-6 mt-10 cursor-pointer"
+            className="mt-6 sm:mt-8 w-full text-sm sm:text-base md:text-lg py-6 cursor-pointer"
           >
             $12.99 — Add to Cart
           </Button>
-          <Button variant={"link"} className="flex justify-center mt-3 text-xs sm:text-base md:text-lg text-red-500 w-full cursor-pointer ">Find Them In Store</Button>
+          <Button
+            variant="link"
+            className="flex justify-center mt-3 text-xs sm:text-base md:text-lg text-[#C93837] hover:text-[#b03030] w-full cursor-pointer"
+          >
+            Find Them In Store
+          </Button>
         </div>
 
         <div className="relative mx-auto aspect-[549/708] w-full max-w-[320px] sm:max-w-[400px]">
           <Image
-            src="/images/product image + logos.svg"
+            src="/images/productimagelogos.svg"
             alt="Mighty Patch packaging and features"
             fill
             sizes="(max-width: 640px) 80vw, 400px"
             className="object-contain"
+            loading="lazy"
           />
         </div>
       </div>

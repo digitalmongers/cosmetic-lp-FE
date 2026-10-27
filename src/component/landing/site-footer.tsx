@@ -31,8 +31,8 @@ export function SiteFooter() {
   return (
     <footer id="footer" className="bg-[#191919] px-5 py-10 text-white sm:py-16">
       <div className="mx-auto max-w-6xl">
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-[1.5fr_1fr_1fr_1fr]">
-          <div className="col-span-2 sm:col-span-1">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-[1.5fr_1fr_1fr_1fr]">
+          <div>
             <Link href="#" className="inline-block">
               <span className="text-3xl font-black uppercase sm:text-6xl">
                 MIGHTY
@@ -43,34 +43,36 @@ export function SiteFooter() {
               </span>
             </Link>
 
-            <p className="mt-3 max-w-xs text-sm leading-5 text-white/50">
+            <p className="mt-3 max-w-xs text-sm leading-5 text-white/60">
               Your skincare routine, with a little extra confidence.
             </p>
           </div>
 
-          {footerGroups.map((group) => (
-            <div key={group.title}>
-              <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-white/80">
-                {group.title}
-              </h3>
+          <div className="grid grid-cols-3 gap-4 sm:contents">
+            {footerGroups.map((group) => (
+              <div key={group.title}>
+                <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-white/90">
+                  {group.title}
+                </h3>
 
-              <ul className="space-y-2">
-                {group.links.map((link) => (
-                  <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      className="text-xs text-white/50 transition-colors hover:text-white"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+                <ul className="space-y-1 sm:space-y-2">
+                  {group.links.map((link) => (
+                    <li key={link.label}>
+                      <Link
+                        href={link.href}
+                        className="inline-block py-1 text-xs text-white/70 transition-colors hover:text-white"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-5 text-xs text-white/40 sm:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-5 text-xs text-white/60 sm:flex-row">
           <p>© 2026 Mighty Patch by Hero Cosmetics. All rights reserved.</p>
           <p>
             Developed by{" "}
@@ -78,12 +80,11 @@ export function SiteFooter() {
               href="https://digitalmongers.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-white/70 transition-colors hover:underline"
+              className="font-medium text-white/80 transition-colors hover:underline"
             >
               Digital Mongers Softech
             </a>
           </p>
-
         </div>
       </div>
     </footer>

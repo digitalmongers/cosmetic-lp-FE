@@ -44,15 +44,15 @@ export function HowItWorks() {
               className="grid grid-cols-[1fr_1.3fr] items-center gap-3 sm:grid-cols-2 sm:gap-8"
             >
               <div>
-                <div className="flex items-center gap-2 mb-1">
+                <div className="flex items-center gap-2 mb-2">
                   <span className="flex h-7 w-7 items-center justify-center rounded-full bg-black text-sm font-black text-white">
                     {step.number}
                   </span>
                 </div>
-                <h3 className="text-xl md:text-4xl font-black text-black sm:text-base">
+                <h3 className="text-base sm:text-xl md:text-5xl font-black text-black">
                   {step.title}
                 </h3>
-                <p className="mt-0.5 text-sm leading-relaxed text-neutral-700 sm:text-3xl">
+                <p className="mt-1 text-xs sm:text-base md:text-3xl leading-relaxed text-neutral-700">
                   {step.description}
                 </p>
                 {step.badge && (
@@ -69,6 +69,7 @@ export function HowItWorks() {
                   fill
                   sizes="(max-width: 640px) 55vw, 380px"
                   className="object-contain"
+                  loading="lazy"
                 />
               </div>
             </article>

@@ -34,6 +34,8 @@ export function HeroSection() {
             fill
             priority
             className="object-contain object-top"
+
+            loading="eager"
           />
         </div>
 
@@ -47,7 +49,7 @@ export function HeroSection() {
             Pimple, meet your
           </p>
 
-          <h1 className="mt-2 sm:mt-3 font-black uppercase leading-none text-5xl sm:text-7xl md:text-8xl">
+          <h1 className="mt-2 sm:mt-3 font-black uppercase leading-none text-4xl sm:text-6xl md:text-7xl lg:text-8xl">
             <div>MIGHTY</div>
             <div className="relative inline-block">
               <span>PATCH</span>
@@ -69,6 +71,7 @@ export function HeroSection() {
               priority
               sizes="(max-width: 640px) 150px, 250px"
               className="object-contain"
+              loading="eager"
             />
           </div>
 
@@ -84,6 +87,7 @@ export function HeroSection() {
               priority
               sizes="(max-width: 640px) 270px, (max-width: 768px) 390px, 460px"
               className="object-contain drop-shadow-2xl"
+              loading="eager"
             />
           </motion.div>
         </div>
@@ -93,7 +97,7 @@ export function HeroSection() {
       <div className="relative w-full flex flex-col items-center pt-6 pb-12 sm:pt-10 sm:pb-20 text-center">
         {/* Title */}
         <div className="w-full px-4 max-w-4xl mx-auto">
-          <h2 className="text-4xl font-black leading-[1.08] sm:text-5xl md:text-6xl lg:text-7xl font-bold mt-4">
+          <h2 className="text-4xl font-black leading-[1.08] sm:text-5xl md:text-6xl lg:text-7xl mt-4">
             The <span className="text-[#C93837]">#1</span>
             <br />
             best-selling
@@ -112,6 +116,7 @@ export function HeroSection() {
                 fill
                 sizes="(max-width: 640px) 35vw, (max-width: 1024px) 32vw, 420px"
                 className="object-cover"
+                loading="lazy"
               />
             </div>
 
@@ -122,16 +127,17 @@ export function HeroSection() {
                 fill
                 sizes="(max-width: 640px) 65vw, (max-width: 1024px) 68vw, 920px"
                 className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
         </div>
 
         {/* Testimonial Quote & CTA Button */}
-        <div className="w-full max-w-lg px-4 mt-6 sm:mt-8 flex flex-col items-center">
-          <blockquote className="text-center text-sm sm:text-base md:text-4xl font-small leading-relaxed">
+        <div className="w-full max-w-xl px-4 mt-6 sm:mt-8 flex flex-col items-center">
+          <blockquote className="text-center text-lg md:text-4xl font-normal leading-relaxed">
             “These patches truly are mighty! They really work and keep my breakouts covered.”
-            <footer className="mt-2 text-[11px] sm:text-sm font-normal text-neutral-600">Robyn D.</footer>
+            <footer className="mt-2 text-xs sm:text-sm font-normal text-neutral-600">Robyn D.</footer>
           </blockquote>
         </div>
       </div>
