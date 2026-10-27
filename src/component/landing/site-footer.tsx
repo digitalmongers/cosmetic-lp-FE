@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 const footerGroups = [
@@ -73,7 +71,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-5 text-xs text-white/40 sm:flex-row">
-          <p>© {new Date().getFullYear()} Mighty Patch by Hero Cosmetics. All rights reserved.</p>
+          <p>© 2026 Mighty Patch by Hero Cosmetics. All rights reserved.</p>
           <p>
             Developed by{" "}
             <a
