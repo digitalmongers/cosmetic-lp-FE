@@ -19,7 +19,7 @@ export function SocialProof() {
   return (
     <section className="bg-[var(--cream)]">
       {/* Two customer portraits side-by-side matching Figma */}
-      <div className="mx-auto max-w-6xl py-4 sm:py-6">
+      <div className="mx-auto max-w-6xl px-5 py-4 sm:py-6">
         <div className="grid grid-cols-[394fr_870fr] gap-2 overflow-hidden rounded-md sm:gap-3">
           <div className="relative aspect-[394/592] overflow-hidden bg-neutral-200">
             <Image
@@ -28,6 +28,7 @@ export function SocialProof() {
               fill
               sizes="(max-width: 640px) 32vw, 400px"
               className="object-cover"
+              loading="lazy"
             />
           </div>
 
